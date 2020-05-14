@@ -45,41 +45,4 @@ export default {
 @import '../../assets/sass/index.scss';
 
 
-body{
-  margin: 0;
-  padding: 0; 
-}
-
-.floor {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.floor-ul {
-    background: $bgc-theme;
-    font-size: 0;
-
-}
-
-.floor-ul li {
-    width: 25%;
-    height: $tabbar-height;
-    display: inline-block;
-    text-align: center;
-    
-}
-
-.floor-ul li img {
-    margin:auto;
-    width: 25px;
-    height: 25px;
-    margin-top: 6px;
-    margin-bottom: 1px;
-    display: block;
-}
-
-.floor-ul li span {
-    font-size: 10px;
-}
-
 </style>

@@ -2,24 +2,24 @@
   <div class="box">
     <div class="box-content">
       <header class="home-header">home-header</header>
-      <div class="content">内容</div>
-      <div class="go-top">返回顶部</div>    
-      <floor></floor> <!-- 底部tab组件 -->
+      <div class="content">内容        
+      </div>
+      <div class="go-top">返回顶部</div>
+      <router-view></router-view>          
     </div>
+    
   </div>
 </template>
 
 <script>
-import floor from '../../components/tabbar'  //导入tab组件
+
 
 export default {
   data() {
     return {}
     
     },
-    components:{
-      floor
-  }
+    
 };
 
 </script>

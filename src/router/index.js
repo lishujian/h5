@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '../page/home'
-import category from '../page/category'
-import cart from '../page/cart'
-import my from '../page/my'
-import product from '../page/product'
+// import home from '../page/home'
+// import category from '../page/category'
+// import cart from '../page/cart'
+// import my from '../page/my'
+//import product from '../page/product'  //使用了路由懒加载后不用这个导入了
 import test from '../page/demo'
 
 Vue.use(Router)
