@@ -35,6 +35,7 @@
 
 <script>
 export default {
+  name: 'floor',
   data() {
     return {};
   }

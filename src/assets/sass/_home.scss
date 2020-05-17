@@ -1,21 +1,24 @@
 @import './variables';
 
-.home{
-
+.home-header{    
+ height: $navbar-height;    //变量过来的高度
+ width: 100%;
+ position: absolute;
+ top: 0;
+ background: red;
 }
 
-// .home-header{    
-//  height: 50px;
-//  width: 100%;
-//  position: fixed;
-//  top: 0;
-//  background: red;
-// }
-
 .content{
-    // margin-top: 50px;
+    margin-top: $navbar-height;
     width: 100%;
     height: 100%;
     background: orange;
+}
+
+.go-top{
+    position: fixed;
+    bottom: $tabbar-height + 10;
+    right: 10px;
+    background: red;
 }
 
