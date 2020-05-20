@@ -1,13 +1,13 @@
 <template>
     <div>
-        <div>
-            <slot></slot>
+        <div v-if="$slots.left">
+            <slot name="left"></slot>
         </div>
-        <div>
-            <slot></slot>
+        <div v-if="$slots.conter">
+            <slot name='conter'></slot>
         </div>
-        <div>
-            <slot></slot>
+        <div v-if="$slots.right">
+            <slot name="right"></slot>
         </div>
     </div>
 </template>
