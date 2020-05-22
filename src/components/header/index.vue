@@ -16,11 +16,19 @@
 .box{
     justify-content: space-around;
     display: flex;
-    &.left{
-        margin-left: 20px;
+    & .left{
+        margin-left: 10px;
+
     }
-    &.conter{
+    & .conter{
+        flex: 1;
         margin: 0 10px;
+        background: red;
+
+    & .right{
+        margin-right: 10px;
+    }
+
     }
 }
 

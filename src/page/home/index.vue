@@ -30,6 +30,7 @@ export default {
 <style lang='scss' scoped>
 @import '../../assets/sass/index.scss';  //导入汇总样式路径
 
+
 .box{
   width: 100%;
   max-width: 640px;
