@@ -18,16 +18,17 @@
     display: flex;
     & .left{
         margin-left: 10px;
-
     }
+
     & .conter{
         flex: 1;
         margin: 0 10px;
         background: red;
+    
+    }
 
     & .right{
         margin-right: 10px;
-    }
 
     }
 }

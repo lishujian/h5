@@ -1,7 +1,7 @@
 <template>
     <headSlor class="head-box">
-        <div class="lefe" slot="left">
-            <img src="../../assets/img/ewm.png" alt="">
+        <div class="left" slot="left">
+            <!-- <img src="../../assets/img/ewm.png" alt=""> -->
         </div>
         <div class="center" slot="conter">2222</div>
         <div class="right" slot="right">
@@ -12,7 +12,7 @@
 
 <script>
 
-import headSlor from '../../components/header/index.vue';
+import headSlor from '../../components/header/index.vue';  //导入公共headSlor组件
 
 export default {
     data(){
@@ -29,24 +29,34 @@ export default {
 <style lang='scss' scoped>
 
     .left{
-        width: 100%;
-        height: 100%;
+        width: 28px;
+        height: 50px;
+        position: relative;
+        background: yellow;
+        
     }
-    .left img{
+    .left img{      
         width: 28px;
         height: 28px;
-        position: relative;
-
-        margin-top: 50%;
+        position: absolute;
+        top: 50%;
         margin-top: -14px;
 
 
-
     }
 
+    .right{
+        position: relative;
+        width: 28px;
+        height: 50px;
+        
+    }
     .right img{
         width: 28px;
         height: 28px;
+        position: absolute;
+        top: 50%;
+        margin-top: -14px;
     }
     
     
