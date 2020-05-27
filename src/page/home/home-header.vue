@@ -1,9 +1,9 @@
 <template>
     <headSlor class="head-box">
         <div class="left" slot="left">
-            <!-- <img src="../../assets/img/ewm.png" alt=""> -->
+            <img src="../../assets/img/ewm.png" alt="">
         </div>
-        <div class="center" slot="conter">2222</div>
+        <div class="center" slot="conter">搜索框</div>
         <div class="right" slot="right">
             <img src="../../assets/img/msg.png" alt="">
         </div>
@@ -26,13 +26,15 @@ export default {
 }
 </script>
 
+
 <style lang='scss' scoped>
+@import '../../assets/sass/index.scss';
 
     .left{
         width: 28px;
-        height: 50px;
+        height: $navbar-height;
         position: relative;
-        background: yellow;
+
         
     }
     .left img{      
@@ -41,14 +43,17 @@ export default {
         position: absolute;
         top: 50%;
         margin-top: -14px;
+    }
 
+    .center{
+        line-height:$navbar-height;
 
     }
 
     .right{
         position: relative;
         width: 28px;
-        height: 50px;
+        height: $navbar-height;
         
     }
     .right img{
@@ -57,6 +62,8 @@ export default {
         position: absolute;
         top: 50%;
         margin-top: -14px;
+        
+        
     }
     
     
