@@ -15,6 +15,7 @@
 import headSlor from '../../components/header/index.vue';  //导入公共headSlor组件
 
 export default {
+    name: 'header',
     data(){
         return{
 

@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import homeHeader from './home-header.vue'
+import homeHeader from './home-header.vue'  //导入header 业务组件
 
 export default {
   name:'home',
