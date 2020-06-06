@@ -21,6 +21,7 @@
     justify-content: space-around;
     display: flex;
     position: relative;
+
     .left{
         margin-left: 5px;
        
@@ -29,7 +30,6 @@
     .conter{
         flex: 1;
         margin: 0 10px;
-        background: red;
       
     
     }
