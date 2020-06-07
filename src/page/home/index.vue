@@ -13,7 +13,7 @@
 
 <script>
 import homeHeader from './home-header.vue'  //导入header 业务组件
-import homeSlide from './home-slide.vue'  //导入home-slide 业务组件
+import homeSlide from './home-slider.vue'  //导入home-slide 业务组件
 export default {
   name:'home',
   data() {

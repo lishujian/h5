@@ -1,0 +1,34 @@
+<template>
+    <div v-swiper:mySwiper="swiperOption">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" :key="banner" v-for="banner in banners">
+          <img :src="banner">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </template>
+   
+  <script>
+    export default {
+      data () {
+        return {
+          banners: [require('./img/1.jpg'),require('./img/2.jpg'),require('./img/3.jpg')],
+          swiperOption: {
+            pagination: {
+              el: '.swiper-pagination',            
+            },
+            
+            autoplay:true,
+            loop: true,
+            
+            // ...
+          }
+        }
+      },
+      mounted() {
+        console.log('Current Swiper instance object', this.mySwiper)
+        this.mySwiper.slideTo(3, 1000, false)
+      }
+    }
+  </script> 
