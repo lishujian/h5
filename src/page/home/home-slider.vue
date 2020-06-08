@@ -11,7 +11,7 @@
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper' //引入swiper 组件
   import 'swiper/css/swiper.css'
 
-  import {gotImg} from '../../api/get-home-slider-img.js'
+  import {gotImg} from '../../api/get-home-slider-img.js'  //导入获取图片资源数据
   export default {
     name: 'swiper-example-pagination',
     title: 'Pagination',
@@ -28,13 +28,22 @@
           },
           autoplay:true,  //自动轮播
           loop:true, //循环
-        }
+        },
+        slider:{}
       }
       
     },
     created(){
-        gotImg();
+        this.gotSlider();
+
+    },
+    methods:{
+      gotSlider(){
+        gotImg().then(data=>{
+          console.log(data)
+        })
       }
+    }
   }
 </script>
 
