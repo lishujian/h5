@@ -1,7 +1,7 @@
 <template>
   <swiper class="swiper" :options="swiperOption">
-    <swiper-slide v-for="banner in banners" :key="banner">
-      <img :src="banner" alt="">
+    <swiper-slide v-for="(banner,index) in slider" :key="index">
+      <img :src="banner.picUrl" alt="">
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
@@ -29,7 +29,7 @@
           autoplay:true,  //自动轮播
           loop:true, //循环
         },
-        slider:{}
+        slider:[]
       }
       
     },
@@ -41,6 +41,7 @@
       gotSlider(){
         gotImg().then(data=>{
           console.log(data)
+          this.slider = data;
         })
       }
     }
