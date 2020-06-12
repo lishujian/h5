@@ -11,7 +11,7 @@
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper' //引入swiper 组件
   import 'swiper/css/swiper.css'
 
-  import {gotImg} from '../../api/get-home-slider-img.js'  //导入获取图片资源数据
+  import {getImg} from '../../api/get-home-slider-img.js'  //导入获取图片资源数据
   export default {
     name: 'swiper-example-pagination',
     title: 'Pagination',
@@ -39,9 +39,9 @@
     },
     methods:{
       gotSlider(){
-        gotImg().then(data=>{
-          console.log(data)
-          this.slider = data;
+        getImg().then(data=>{
+          console.log(data.slider)
+          this.slider = data.slider;
         })
       }
     }
