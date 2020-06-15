@@ -19,7 +19,8 @@ export default {
   data() {
     return {
       test: 12345,
-      testb: 6666
+      testb: 6666,
+      testc: 7777
     }
     
     },
