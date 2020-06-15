@@ -6,7 +6,7 @@
       <div class="content">
         <homeSlide>123</homeSlide>        
       </div>
-      <div class="go-top">返回顶部</div>
+      <div class="go-top">返回顶部1</div>
       <router-view></router-view>         
     </div>
 </template>
