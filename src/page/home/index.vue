@@ -18,7 +18,7 @@ export default {
   name:'home',
   data() {
     return {
-      test: 123456
+      test: 1234567
     }
     
     },
