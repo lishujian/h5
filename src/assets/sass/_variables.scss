@@ -9,6 +9,7 @@ $bgc-theme: #f5f5f5;
 $header-bgc: rgb(222, 24, 27);
 $header-bgc-translucent: rgba(222, 24, 27, 0.9);
 $modal-bgc: rgba(0, 0, 0, 0.4);
+$home-head:transparent;
 
 //font size
 $font-size-base: 12px;
@@ -22,6 +23,7 @@ $tabbar-z-index: 1000;
 $backtop-z-index: 1100;
 $search-z-index: 1200;
 $product-z-index: 1200;
+$home-head-right-z-index:1300;
 $search-popup-z-index: $search-z-index + 10;
 $category-popup-z-index: $search-z-index - 10;
 

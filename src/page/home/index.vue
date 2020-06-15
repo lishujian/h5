@@ -1,7 +1,10 @@
 <template>
   <div class="box">
-      <header class="home-header">home-header</header>
-      <div class="content">内容        
+      <header class="home-header">
+        <homeHeader></homeHeader>
+      </header>
+      <div class="content">
+        <homeSlide>123</homeSlide>        
       </div>
       <div class="go-top">返回顶部</div>
       <router-view></router-view>         
@@ -9,20 +12,27 @@
 </template>
 
 <script>
-
+import homeHeader from './home-header.vue'  //导入header 业务组件
+import homeSlide from './home-slider.vue'  //导入home-slide 业务组件
 export default {
   name:'home',
   data() {
-    return {}
+    return {
+      test: 123
+    }
     
     },
+    components:{
+      homeHeader,
+      homeSlide
+    }
     
 };
 
 </script>
 
 <style lang='scss' scoped>
-@import '../../assets/sass/index.scss';
+@import '../../assets/sass/index.scss';  //导入汇总样式路径
 
 
 .box{
