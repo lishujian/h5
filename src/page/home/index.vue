@@ -20,7 +20,8 @@ export default {
     return {
       test: 12345,
       testb: 6666,
-      testc: 7777
+      testc: 7777,
+      testd: 8888
     }
     
     },
