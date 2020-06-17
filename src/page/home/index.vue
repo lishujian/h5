@@ -6,7 +6,7 @@
       <div class="content">
         <homeSlide>123</homeSlide>        
       </div>
-      <div class="go-top">返回顶部</div>
+      <div class="go-top">返回顶部1</div>
       <router-view></router-view>         
     </div>
 </template>
@@ -17,7 +17,14 @@ import homeSlide from './home-slider.vue'  //导入home-slide 业务组件
 export default {
   name:'home',
   data() {
-    return {}
+    return {
+      test: 12345,
+      testb: 6666,
+      testc: 7777,
+      testd: 8899,
+      testddd: 9999999999,
+      dddd: 20000000000
+    }
     
     },
     components:{
@@ -31,7 +38,9 @@ export default {
 
 <style lang='scss' scoped>
 @import '../../assets/sass/index.scss';  //导入汇总样式路径
-
+//1
+.box{
+}
 
 .box{
   width: 100%;

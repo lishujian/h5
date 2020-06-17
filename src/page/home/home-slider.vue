@@ -29,17 +29,17 @@
           autoplay:true,  //自动轮播
           loop:true, //循环
         },
-        slider:[]
+        slider:{}
       }
       
     },
-    created(){
-        this.gotSlider();
+    created(){    
+        this.getSlider();
 
     },
     methods:{
-      gotSlider(){
-        getImg().then(data=>{
+      getSlider(){
+        getImg().then((data)=>{
           console.log(data.slider)
           this.slider = data.slider;
         })
