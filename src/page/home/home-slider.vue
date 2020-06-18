@@ -33,17 +33,15 @@
       }
       
     },
-    created(){    
-        this.getSlider();
+    created(){   //实例创建完成，立即调用 
+        getImg().then((data)=>{
+          // console.log(data)
+          this.slider = data;
+        })
 
     },
     methods:{
-      getSlider(){
-        getImg().then((data)=>{
-          console.log(data.slider)
-          this.slider = data.slider;
-        })
-      }
+      
     }
   }
 </script>
