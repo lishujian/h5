@@ -13,7 +13,7 @@
 
   import {getImg} from '../../api/get-home-slider-img.js'  //导入获取图片资源数据
   export default {
-    name: 'swiper-example-pagination',
+    name: 'home-swiper',
     title: 'Pagination',
     components: {
       Swiper,
@@ -21,7 +21,7 @@
     },
     data() {
       return {
-        banners:[require('./img/1.jpg'), require('./img/2.jpg'), require('./img/3.jpg')],
+        //banners:[require('./img/1.jpg'), require('./img/2.jpg'), require('./img/3.jpg')],
         swiperOption: {
           pagination: {
             el: '.swiper-pagination'
@@ -34,7 +34,7 @@
       
     },
     created(){   //实例创建完成，立即调用 
-        getImg().then((data)=>{
+        getImg().then((data)=>{    //大api的信息赋值给slider
           // console.log(data)
           this.slider = data;
         })

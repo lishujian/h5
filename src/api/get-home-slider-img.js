@@ -5,17 +5,17 @@ export const getImg = ()=>{
     return axios.get('http://www.imooc.com/api/home/slider',{timeout:1000}).then((res)=>{
         // console.log(res)    
     if(res.data.code == 0){
-            return res.data.slider;
-            
+            return res.data.slider; 
+                  
         }
-    throw new Error('没有接口信息返回');
-    }).catch((err)=>{
+    throw new Error('没有接口信息返回');     
+     }).catch((err)=>{
         if(err){
-            console.log(err + '接口请求超时，没有返回接口对应的图片信息')
+            console.log(err + '接口请求超时，没有返回接口对应的图片信息,使用默认照片')
         }
         return [
             {
-                linkUrl: 'www.baidu.com',
+                linkUrl: 'https://www.baidu.com',
                 picUrl: require('../assets/img/404.png')
             }
         ];

@@ -2,18 +2,23 @@
     <div>
         <div>{{ad()}}</div>
         <div>{{add}}</div>
-        <div class="d">
-            <div slot="demo1">123</div>
-            <demo ></demo>
+        <div class="d" ref="aaa">
+            
+            <demo2>
+                <div slot="demo2"></div>
+                <div slot="demo1">DIV</div>
+            </demo2>
             
         </div>
-        <demo1 title=123  content='我是content'></demo1>
+        <demo1 title=12345678  content='我是content'></demo1>
     </div>
 </template>
 
 <script>
-import demo from '../../components/demo/index.vue';
+
 import demo1 from '../../components/demo/demo.vue';
+import demo2 from '../../components/demo/index.vue';
+
 export default {
     data(){
         return{
@@ -22,19 +27,22 @@ export default {
         
     },
     components:{
-        demo,
-        demo1
+        demo1,
+        demo2
     },
     computed:{ //属性调用，带缓存
         add(){
             return this.num + 4
         }
     },
-    methods:{ //函数调用，不带缓存
+    methods:{ //函数调用，不带缓存，调用时需要（）
         ad(){ 
             return this.num + 10
         }
     },
+    mounted(){
+        this.$refs.aa.innerHTML = '我是DOM来的'
+    }
 }
 
 </script>

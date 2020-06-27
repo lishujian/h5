@@ -6,14 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+
+    <input value="点击查看" type="button" onclick="test1()">
+
     <script>
 
+        function test1(){
+
+        }
+        
         function test(b){
-            if(typeof(b) == Number){
+
+            if(typeof b == 'number'){
                 throw new Error('这不是一个字符串');
                 console.log(b)
+            }else{
+                console.log('123')
             }
-            console.log(typeof(b));
+           // console.log(typeof(b));
         }
 
         try{
@@ -22,7 +32,12 @@
             console.log('错误了')
         }
 
-        test('aa')
+        test('abc') 
+
+        setTimeout(function(){
+            test('abc')
+        },3000)
+
 
     </script>
 </body>
