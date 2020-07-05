@@ -6,7 +6,8 @@
         </slot>
         <div>分界线</div>
         <slot name="demo22">
-            <!-- <p>第二个插槽</p> -->
+            
+            <p>第二个插槽</p>
         </slot>
     </div>
 </template>
