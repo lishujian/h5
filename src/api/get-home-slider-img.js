@@ -22,9 +22,9 @@ export const getImg = ()=>{
     }).then( data => {   //延迟2s 才响应
         return new Promise( sueeccd => {
             setTimeout( ()=>{
-                sueeccd(data)
+                sueeccd(data);
             },2000)
-        })
+        });
 
         
     })

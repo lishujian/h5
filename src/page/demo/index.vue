@@ -7,13 +7,16 @@
             
             
         </div>
-        <demo2>
-            <div slot="demo22">我是11111111111111</div>
+        <demo2 test='off'>
+            <div slot="demo22"  >我是demo22
+                <p>我是demo22里的p</p>
+            </div>
 
             <!-- <div slot="demo2"></div>
             <div slot="demo1"> </div> -->
         </demo2>
         <demo1 title=12345678  content='我是content'></demo1>
+        
     </div>
 </template>
 
