@@ -17,7 +17,9 @@ import homeSlide from './home-slider.vue'  //导入home-slide 业务组件
 export default {
   name:'home',
   data() {
-    return {}
+    return {
+      name: true
+    }
     
     },
     components:{
