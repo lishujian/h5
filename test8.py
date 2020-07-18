@@ -12,7 +12,7 @@ print('''1
 ...2
 ...3''')
 
-lists = ['a','b','c']   #获取数组 个数
+lists = ['a','b','c']   #获取数组 个数，列表就是平时说的数组
 print(len(lists))
 
 lists.insert(1,'a2')  #插入数据到某个数组位置
@@ -35,3 +35,41 @@ if age >= 18:
     print('我大于或等于18额')
 else:
     print('小于18')
+
+dlist = ['aa','bb','cc','dd']   #for 循环
+for i in dlist:
+    print(i)
+
+sum = 0              
+for x in range(101):  #for 循环实现相加
+    sum = sum + x
+    print(sum)
+
+demo = 10     #while 循环
+while demo > 5:
+    demo = demo -1
+    print(demo)
+
+demo1 = 10    #break 跳出循环
+while demo1 >4:
+    demo1 = demo1 - 1
+    if demo1 < 7:
+        print(demo1)
+        break
+    print(demo1)
+
+print('分割线-----------')
+demo2 = 20
+while demo2 > 2:
+    demo2 = demo2 -1    
+    if demo2 %2 == 0:
+        continue
+    print(demo2)
+
+demo3 = {'name':'周杰伦',age: 27}  # 字典，平时说的对象
+
+print(demo3['name'])
+print(demo3. get('name')) 
+print(demo3. get('name11'))    #没有找到会返回None
+   
+    
