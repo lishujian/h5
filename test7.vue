@@ -33,6 +33,8 @@ export default {
 
     },
 };
+
+    console.log()
 </script>
 
 <style lang="scss" scoped>
