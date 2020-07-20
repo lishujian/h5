@@ -3,7 +3,7 @@ import axios from 'axios';
 //获取api图片资源
 export const getImg = ()=>{     
     return axios.get('http://www.imooc.com/api/home/slider',{timeout:1000}).then((res)=>{
-        // console.log(res)    
+        console.log(res.data.slider)    
     if(res.data.code == 0){
             return res.data.slider; 
                   
@@ -19,5 +19,13 @@ export const getImg = ()=>{
                 picUrl: require('../assets/img/404.png')
             }
         ];
+    }).then( data => {   //延迟2s 才响应
+        return new Promise( sueeccd => {
+            setTimeout( ()=>{
+                sueeccd(data);
+            },2000)
+        });
+
+        
     })
 }
