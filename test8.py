@@ -71,5 +71,8 @@ demo3 = {'name':'周杰伦',age: 27}  # 字典，平时说的对象
 print(demo3['name'])
 print(demo3. get('name')) 
 print(demo3. get('name11'))    #没有找到会返回None
-   
+
+sk = [1,2,3,4,5]
+
+def adds(*sk)
     
