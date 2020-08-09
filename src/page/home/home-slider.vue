@@ -1,23 +1,28 @@
 <template>
   <swiper class="swiper" :options="swiperOption">
-    <swiper-slide v-for="(banner,index) in slider" :key="index">
+    <SliderLoading></SliderLoading>
+    <!-- <swiper-slide v-for="(banner,index) in slider" :key="index">
       <img :src="banner.picUrl" alt="">
     </swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
+    <div class="swiper-pagination" slot="pagination"></div> -->
   </swiper>
 </template>
 
 <script>
-  import { Swiper, SwiperSlide } from 'vue-awesome-swiper' //引入swiper 组件
+  import { Swiper, SwiperSlide } from 'vue-awesome-swiper'; //引入swiper 组件
   import 'swiper/css/swiper.css'
+  
 
   import {getImg} from '../../api/get-home-slider-img.js'  //导入获取图片资源数据
+  import SliderLoading from '../../assets/loading/index.vue'
   export default {
     name: 'home-swiper',
     title: 'Pagination',
     components: {
       Swiper,
-      SwiperSlide
+      SwiperSlide,
+      SliderLoading
+
     },
     data() {
       return {

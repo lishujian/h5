@@ -12,8 +12,7 @@
 
 <script>
 
-import headSlor from '../../components/header/index.vue';  //导入公共headSlor组件
-
+import headSlor from '../../components/header/index.vue'  //导入公共headSlor组件
 export default {
     name: 'home-header',
     data(){
@@ -22,7 +21,7 @@ export default {
         }
     },
     components:{
-        headSlor
+        headSlor,
     }
 }
 </script>
