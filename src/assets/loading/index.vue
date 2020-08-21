@@ -1,6 +1,6 @@
 <template>
     <div>
-        加载中
+        加载中123456789
     </div>
 </template>
 

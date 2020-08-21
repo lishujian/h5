@@ -5,7 +5,6 @@ print(100 + 200)
 
 print("我是\"123")  #转义
 
-
 print('周 \n杰伦')
 #使用'''  ... =可以美观换行
 print('''1      
@@ -72,7 +71,53 @@ print(demo3['name'])
 print(demo3. get('name')) 
 print(demo3. get('name11'))    #没有找到会返回None
 
-sk = [1,2,3,4,5]
+sk = [1,2,3,4,5]   #调用多个参数
+def adds(*list):
+    for x in list:
+        print(x)
 
-def adds(*sk)
+adds(*sk)
+
+#关键字参数
+def demo4(name,age,**kw):
+    print('name:',name,'age:',age,'other:',kw)
+
+demo4('周杰伦',35)
+demo4('周杰伦',35,true='flase')
+
+#切片
+list1 = ['a','b','c','d','e']
+
+print(list1[1:3])
+
+list2 = {'a':1,'b':2,'c':3,'d':4}
+
+for i in list2:
+    print(list2[i])
+
+for i in range(10,15):
+    print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
