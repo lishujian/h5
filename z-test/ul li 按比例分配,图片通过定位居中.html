@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul li 按比例分配,图片通过定位居中</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a{
+            width: 800px;
+            height: 800px;
+            border: 1px red solid;
+
+        }
+        .a ul{
+            width: 100%;
+            height: 80px;
+            background: rebeccapurple;
+            font-size: 0;  /* 让li 之间没有间隙 */
+
+        }
+        .a ul li{
+            width: 25%;
+            display: inline-block;        
+
+        }
+        .a ul li img{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            left: 50%;
+            margin-left: -25px;
+    
+        }
+        /* 调试用，明显一点 */
+        .a ul li:nth-child(1){
+            background: red;
+
+
+        }
+        .a ul li:nth-child(2){
+            background: chartreuse;
+
+
+        }
+        .a ul li:nth-child(3){
+            background: yellow;
+
+
+        }
+        .a ul li:nth-child(4){
+            background: lightcoral;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <ul>
+            <li><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1600523925&di=4b83d559365def842dab89f453b4fd08&src=http://a2.att.hudong.com/36/48/19300001357258133412489354717.jpg" alt=""></li>
+            <li><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1600523925&di=4b83d559365def842dab89f453b4fd08&src=http://a2.att.hudong.com/36/48/19300001357258133412489354717.jpg" alt=""></li>
+            <li><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1600523925&di=4b83d559365def842dab89f453b4fd08&src=http://a2.att.hudong.com/36/48/19300001357258133412489354717.jpg" alt=""></li>
+            <li><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1600523925&di=4b83d559365def842dab89f453b4fd08&src=http://a2.att.hudong.com/36/48/19300001357258133412489354717.jpg" alt=""></li>
+        </ul>
+        
+
+    </div>
+</body>
+</html>

@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>清除浮动的方法</title>
     <style>
+        /* 方法一 */
+        .clear{
+            /* clear: both; */
+        }
+
         .box:after{
-            /* 方法二 */
+            /* 方法二 */            
             /* overflow: hidden; */
             
             /* 方法三 */
@@ -25,10 +30,7 @@
             background-color: red;
             float: left;
         }
-        /* 方法一 */
-        .clear{
-            /* clear: both; */
-        }
+        
 
         
 

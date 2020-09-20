@@ -6,6 +6,7 @@
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div> -->
   </swiper>
+  
 </template>
 
 <script>
@@ -32,14 +33,14 @@
             el: '.swiper-pagination'
           },
           autoplay:true,  //自动轮播
-          loop:true, //循环
+          loop:fa, //循环
         },
         slider:{}
       }
       
     },
     created(){   //实例创建完成，立即调用 
-        getImg().then((data)=>{    //大api的信息赋值给slider
+        getImg().then((data)=>{    //把api的信息赋值给slider
           // console.log(data)
           this.slider = data;
         })
