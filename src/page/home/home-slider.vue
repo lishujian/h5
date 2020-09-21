@@ -1,10 +1,12 @@
 <template>
   <swiper class="swiper" :options="swiperOption">
-    <SliderLoading></SliderLoading>
-    <!-- <swiper-slide v-for="(banner,index) in slider" :key="index">
+    <SliderLoading v-if="!slider.length"></SliderLoading>
+    <swiper-slide v-for="(banner,index) in slider" :key="index">
       <img :src="banner.picUrl" alt="">
     </swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div> -->
+    
+    <div class="swiper-pagination" slot="pagination"></div>
+    
   </swiper>
   
 </template>
@@ -33,7 +35,7 @@
             el: '.swiper-pagination'
           },
           autoplay:true,  //自动轮播
-          loop:fa, //循环
+          loop:true, //循环
         },
         slider:{}
       }
