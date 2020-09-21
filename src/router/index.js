@@ -44,6 +44,11 @@ export default new Router({
     {
       path: '*', //除配置的路由外，任意输入，跳转到指定页面
       redirect: '/'
+    },
+    {
+      path: '/vue',
+      name: 'vue练习用',
+      component:() =>import('../../z-test/vue练习.vue')
     }
   ]
 })
