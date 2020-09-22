@@ -1,14 +1,11 @@
 <template>
   <swiper class="swiper" :options="swiperOption">
-    <SliderLoading v-if="!slider.length"></SliderLoading>
+    <SliderLoading v-if="!slider.length"></SliderLoading>    <!-- 加载中组件 -->
     <swiper-slide v-for="(banner,index) in slider" :key="index">
-      <img :src="banner.picUrl" alt="">
+      <img :src="banner.picUrl" alt="轮播图">
     </swiper-slide>
-    
     <div class="swiper-pagination" slot="pagination"></div>
-    
   </swiper>
-  
 </template>
 
 <script>
