@@ -1,19 +1,24 @@
 <template>
   <div class="box">
-      <header class="home-header">
-        <homeHeader></homeHeader>
-      </header>
-      <div class="content">
-        <homeSlide>123</homeSlide>        
-      </div>
-      <div class="go-top">返回顶部</div>
-      <router-view></router-view>         
+    <header class="home-header">
+      <homeHeader></homeHeader>
+    </header>    
+    <div class="content">
+      <homeSlide>123</homeSlide>        
     </div>
+    <!-- <homeScroll></homeScroll> --><!--滚动条-->   
+    <div class="go-top">返回顶部</div>
+    <router-view></router-view>
+          
+  </div>
+
 </template>
 
 <script>
 import homeHeader from './home-header.vue'  //导入header 业务组件
 import homeSlide from './home-slider.vue'  //导入home-slide 业务组件
+import scroll from '../../components/scroll/index.vue' //导入滚动条
+
 export default {
   name:'home',
   data() {
@@ -24,7 +29,8 @@ export default {
     },
     components:{
       homeHeader,
-      homeSlide
+      homeSlide,
+      homeScroll
     }
     
 };

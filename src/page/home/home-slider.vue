@@ -32,7 +32,7 @@
             el: '.swiper-pagination'
           },
           autoplay:true,  //自动轮播
-          loop:true, //循环
+          //loop:true, //循环(加了这个，会出现先看到最后一张问题)
         },
         slider:{}
       }

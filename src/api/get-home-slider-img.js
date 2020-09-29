@@ -9,7 +9,7 @@ export const getImg = ()=>{
             return res.data.slider; 
                   
         }
-    throw new Error('没有接口信息返回');     
+     throw new Error('没有接口信息返回');    //这个我感觉没什么用 
      }).catch((err)=>{
         if(err){
             console.log(err + '接口请求超时，没有返回接口对应的图片信息,使用默认照片')
@@ -23,8 +23,7 @@ export const getImg = ()=>{
     }).then( data => {   //延迟2s 才响应
         return new Promise( sueeccd => {
             setTimeout( ()=>{
-                console.log(data)
-                sueeccd(data);
+                var aa = sueeccd(data);
             },2000)
         });
 

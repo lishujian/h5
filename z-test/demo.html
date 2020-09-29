@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>计数器：{{num}}</div>
+         <button @click='num++'>点我</button><br>
+
+         米<input type="text" v-model='mi'>转换
+         千米<input type="text" v-model='qianmi'>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    num: 1,
+                    mi: 0,
+                    qianmi: 0
+                }
+            },
+             watch: {  //监听属性
+                mi:function(vla){
+                    this.mi = vla;
+                    this.qianmi = vla/1000 
+                },
+                qianmi:function(vla){
+                    this.qianmi = vla;
+                    this.mi = vla*1000 
+                }
+
+            },
+        })
+    </script>
+</body>
+</html>
