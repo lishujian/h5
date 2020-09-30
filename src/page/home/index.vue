@@ -4,8 +4,10 @@
       <homeHeader></homeHeader>
     </header>    
     <div class="content">
-      <homeSlide>123</homeSlide>        
+      <homeSlide>123</homeSlide>
+      
     </div>
+    <homeNav></homeNav>
     <!-- <homeScroll></homeScroll> --><!--滚动条-->   
     <div class="go-top">返回顶部</div>
     <router-view></router-view>
@@ -17,7 +19,8 @@
 <script>
 import homeHeader from './home-header.vue'  //导入header 业务组件
 import homeSlide from './home-slider.vue'  //导入home-slide 业务组件
-import scroll from '../../components/scroll/index.vue' //导入滚动条
+import homeScroll from '../../components/scroll/index.vue' //导入滚动条
+import homeNav from '../../components/home-nav/index'  //导入首页导航
 
 export default {
   name:'home',
@@ -30,7 +33,8 @@ export default {
     components:{
       homeHeader,
       homeSlide,
-      homeScroll
+      homeScroll,
+      homeNav
     }
     
 };
